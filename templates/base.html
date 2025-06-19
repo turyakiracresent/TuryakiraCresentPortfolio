@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Turyakira Cresent | Portfolio</title>
+</head>
+<body>
+<header>
+<a href="{% url 'home'%}">Home</a>  |  
+
+<a href="{% url 'aboutMe'%}">About Me</a>  |  
+
+<a href="{% url 'projects'%}">Projects</a>  |  
+
+<a href="{% url 'services'%}">Services</a>  | 
+
+<a href="{% url 'contactMe'%}">Contact Me</a>  
+
+</header>
+{% block content%}
+
+{% endblock content%}
+</body>
+</html>
