@@ -5,24 +5,35 @@
     <meta name="description" content="Portfolio of Turyakira Cresent, showcasing projects, skills, and services offered.">
     <meta name="keywords" content="Portfolio, Turyakira Cresent, Projects, Services, Contact">
     <meta name="author" content="Turyakira Cresent">    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--ScreenWdith-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Turyakira Cresent | Portfolio</title>
 </head>
 <style>
-    body{
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial;
+    }
+    html,body{
+        height: 100%;
+        width: 100%;
         background-color: cyan;
     }
+   
     nav{
         background-color: gold;
-        position: absolute;
+        position: relative;
         top:0px;
         left: 0px;
         width: 100%;
         display: flex;
-        padding: 0px;
-        justify-content: space-evenly;
+        padding: 10px 30px;
+        justify-content: space-between;
        align-items: center;
        gap: 0px;
+       height: 70px;
     
        
     }
@@ -31,6 +42,7 @@
         background-color: mediumpurple;
         bottom:0;
         left: 0;
+        height: 14%;
         width: 100%;
         text-align: center;
         color: rgb(68, 0, 255);
@@ -41,22 +53,53 @@
         margin: 0;
         opacity: 0.8;
     }
+    nav ul{
+        display: flex;
+        gap: 30px;
+    }
+    nav ul li{
+        list-style: none;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    #Portfolio{
+        position: relative;
+        top:0px;
+        left: 0px;
+       color: white;
+        
+     background-color: mediumpurple;
+       
+    }
+    .menu-icon{
+        color: #fff;
+    }
 </style>
 <body>
+    <div id="Portfolio">
+      <marquee style=" width: 100%;"> <h1>Welcome To My Portfolio </h1></marquee>
+    </div>  <br>
  <header>
+   
    <nav>
+    
     <h1>Turyakira Cresent</h1>
     
-
-<a href="{% url 'home'%}">Home</a> |
-
-<a href="{% url 'aboutMe'%}">About Me</a> |  
-
-<a href="{% url 'projects'%}">Projects</a> |  
-
-<a href="{% url 'services'%}">Services</a> | 
-
-<a href="{% url 'contactMe'%}">Contact Me</a>  
+<ul>
+    <li><a href="{% url 'home'%}">Home</a></li>
+    <li><a href="{% url 'aboutMe'%}">About Me</a></li>
+    <li><a href="{% url 'projects'%}">Projects</a></li>
+    <li><a href="{% url 'services'%}">Services</a></li>
+    <li><a href="{% url 'contactMe'%}">Contact Me</a></li>  
+</ul>
+<div class="menu-icon">  
+    <i class="fa-solid fa-bars"></i>
+</div>
+ 
 </nav>
 
 </header>
